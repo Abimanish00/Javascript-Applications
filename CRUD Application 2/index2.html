@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Students CRUD App</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2>CRUD Operations</h2>
+        <div class="form-container">
+            <h3>Student Details</h3>
+            <form id="stdforms">
+                <input type="hidden" id="stdId">
+                <div class="form-group">
+                    <label for="stdName">Student Name</label>
+                    <input id="stdName" type="text">
+                </div>
+                <div class="form-group">
+                    <label for="stdMail">Student Mail</label>
+                    <input id="stdMail" type="email">
+                </div>
+                <div class="form-group">
+                    <label for="stdPhnNo">Student Phn No</label>
+                    <input id="stdPhnNo" type="text">
+                </div>
+                <div class="form-group">
+                    <label for="stdMark1">Mark-1</label>
+                    <input id="stdMark1" type="number" min="0" max="100">
+                </div>
+                <div class="form-group">
+                    <label for="stdMark2">Mark-2</label>
+                    <input id="stdMark2" type="number" min="0" max="100">
+                </div>
+                <div class="form-group">
+                    <label for="stdMark3">Mark-3</label>
+                    <input id="stdMark3" type="number" min="0" max="100">
+                </div>
+                <button type="submit" id="submitBtn">submit</button>
+                <button type="button" id="cancelBtn" style="display: none;">Cancel</button>
+            </form>
+        </div>
+        <div class="table-container">
+            <h2>Student Details</h2>
+            <div class="table-wrapper">
+
+                <table id="table">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Mail</th>
+                            <th>Phone</th>
+                            <th>Mark 1</th>
+                            <th>Mark 2</th>
+                            <th>Mark 3</th>
+                            <th>Total</th>
+                            <th>Result</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="stdlist"></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="script2.js"></script>
+
+</body>
+
+</html>
