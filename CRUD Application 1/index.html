@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic CRUD App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>CRUD Operations</h1>
+
+        <!-- Create Form -->
+        <div class="form-container">
+            <h2>Add/Edit Student</h2>
+            <form id="itemForm">
+                <input type="hidden" id="itemId">
+                <div class="form-group">
+                    <label for="itemName">Name:</label>
+                    <input type="text" id="itemName" >
+                </div>
+                <div class="form-group">
+                    <label for="itemAge">Age:</label>
+                    <input type="number" id="itemAge" >
+                </div>
+                <div class="form-group">
+                    <label for="itemCollege">College Name:</label>
+                    <input type="text" id="itemCollege" >
+                </div>
+                <div class="form-group">
+                    <label for="itemAddress">Address:</label>
+                    <textarea id="itemAddress" rows="3" ></textarea>
+                </div>
+                <button type="submit" id="submitBtn">Add Student</button>
+                <button type="button" id="cancelBtn" style="display: none;">Cancel</button>
+            </form>
+        </div>
+
+        <!-- Items List -->
+        <div class="items-container">
+            <h2>Items List</h2>
+            <table id="itemsTable">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Age</th>
+                        <th>College</th>
+                        <th>Address</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="itemsList"></tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
